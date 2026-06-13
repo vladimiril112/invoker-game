@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoker Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Тренажер Инвокера</h1>
+        
+        <!-- Задание для игрока -->
+        <div class="target-container">
+            <p>Кастани заклинание:</p>
+            <div id="target-spell-name" class="target-name">Sun Strike</div>
+        </div>
+
+        <!-- Крутящиеся сферы вокруг игрока -->
+        <div class="orbs-orbit">
+            <div id="orb-slot-0" class="orb-visual"></div>
+            <div id="orb-slot-1" class="orb-visual"></div>
+            <div id="orb-slot-2" class="orb-visual"></div>
+        </div>
+
+        <!-- Панель активных сфер (текстовая подсказака) -->
+        <div class="orbs-panel">
+            <div id="orb0" class="orb-slot">—</div>
+            <div id="orb1" class="orb-slot">—</div>
+            <div id="orb2" class="orb-slot">—</div>
+        </div>
+
+        <!-- Вызыванное заклинание -->
+        <div class="spell-panel">
+            <div id="current-spell" class="spell-slot">Нет заклинания</div>
+        </div>
+
+        <!-- Инструкция -->
+        <div class="controls-info">
+            <p>Управление: <strong>Q</strong> (Quas), <strong>W</strong> (Wex), <strong>E</strong> (Exort), <strong>R</strong> (Invoke)</p>
+            <p>Счёт: <span id="score-counter">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
